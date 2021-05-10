@@ -1,0 +1,18 @@
+version: "3"
+services:
+  rocket-push-gateway:
+    build: .
+    image: rocket-push-gateway:latest
+    container_name: rocket-push-gateway
+    ports:
+     - "11000:11000"
+    environment:
+     - PORT=11000
+     - LOG_LEVEL=error
+     #- NODE_CONFIG=${NODE_CONFIG}
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "256k"
+        max-file: "1"

@@ -1,0 +1,14 @@
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+npm-debug.log*
+.npmrc
+*.log
+*.pcap
+*.~
+*.swp
+logs/
+certs/
+node_modules/
+test-*.json
+config/local.js
+config/production.js
+Makefile

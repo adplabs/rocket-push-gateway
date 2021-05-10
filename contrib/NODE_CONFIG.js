@@ -1,0 +1,1 @@
+{"name":"rocket-push-gateway","proxyHostname":"proxy.local","proxyPort":3128,"pushProviders":{"apple":{"p8KeyFilePath":"/app/certs/AuthKey_123A45CDFE.p8","keyId":"123A45CDFE","teamId":"A1B234567A","apnProduction":true},"google":{}}}

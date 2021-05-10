@@ -1,0 +1,8 @@
+*.pcap
+*.log
+*.~
+certs/*
+node_modules
+Makefile
+config/local.js
+config/production.js

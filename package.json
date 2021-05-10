@@ -1,0 +1,41 @@
+{
+  "name": "rocket-push-gateway",
+  "version": "1.0.0",
+  "description": "Push Notification Gateway to be used with Rocket.chat",
+  "main": "app.js",
+  "engines": {
+    "node": ">= 14.5.0"
+  },
+  "scripts": {
+    "start": "LOG_LEVEL=info node app.js",
+    "debug": "DEBUG=* LOG_LEVEL=trace node app.js",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adplabs/rocket-push-gateway.git"
+  },
+  "keywords": [
+    "rocket.chat",
+    "push",
+    "notification",
+    "gateway",
+    "apn",
+    "apns",
+    "fcm"
+  ],
+  "author": "Alvaro Reguly",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@parse/node-apn": "^3.1.0",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "express-pino-logger": "^5.0.0",
+    "node-fetch": "^2.6.0",
+    "pino": "^6.3.2"
+  },
+  "bugs": {
+    "url": "https://github.com/adplabs/rocket-push-gateway/issues"
+  },
+  "homepage": "https://github.com/adplabs/rocket-push-gateway#readme"
+}

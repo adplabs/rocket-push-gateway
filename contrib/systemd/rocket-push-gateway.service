@@ -1,0 +1,17 @@
+[Unit]
+Description=Push Notification Gateway to be used with Rocket.chat
+After=syslog.target network.target
+
+[Service]
+User=daemon
+Group=nogroup
+Type=simple
+ExecStart=/usr/bin/node /app/app.js
+TimeoutStopSec=5
+KillMode=process
+Restart=on-failure
+UMask=0022
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

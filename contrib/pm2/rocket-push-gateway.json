@@ -1,0 +1,15 @@
+{
+  "apps": [{
+    "name": "rocket-push-gateway-11000",
+    "max_memory_restart": "1024M",
+    "log_date_format": "YYYY-MM-DD HH:mm:ss SSS",
+    "script": "/root/rc-3000/main.js",
+    "out_file": "/var/log/rocket.chat/3000.app.log",
+    "error_file": "/var/log/rocket.chat/3000.err.log",
+    "env": {
+      "NODE_CONFIG": '{"pushProviders":{"apple":{"p8KeyFilePath":"/app/certs/AuthKey_123A45CDFE.p8","keyId":"123A45CDFE","teamId":"A1B234567A","apnProduction":true}}}',
+      "LOG_LEVEL": "error",
+      "PORT": "11000"
+    }
+  }]
+}
